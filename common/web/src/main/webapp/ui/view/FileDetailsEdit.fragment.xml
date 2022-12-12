@@ -1,0 +1,14 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	<form:SimpleForm editable="true" layout="ResponsiveGridLayout">
+		<Label text="Name" required="true" />
+		<Input value="{file>/name}" maxLength="80" valueLiveUpdate="true" />
+
+		<Label text="Public" />
+		<Switch state="{file>/listPublicly}" visible="{=${file>/fileType} === 'template'}" />
+
+		<Label text="Description" />
+		<TextArea value="{file>/description}" growing="true" growingMaxLines="9" visible="{= ${file>/fileType} !== 'template'}"
+			valueLiveUpdate="true" />
+
+	</form:SimpleForm>
+</core:FragmentDefinition>

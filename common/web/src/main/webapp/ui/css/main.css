@@ -1,0 +1,193 @@
+.fixBarIssue {
+	line-height: 1rem;
+	margin-top: -8px;
+}
+
+.sapMITBContent {
+	border-bottom-width: 0px !important;
+}
+
+.sapFCardHeaderText .sapMTextMaxLine {
+	-webkit-line-clamp: 1 !important;
+}
+
+.tileSelected {
+	border-color: red;
+	border-style: solid;
+	border-width: 5px;
+}
+
+.hugeObjectNumber>.sapMObjectNumberText {
+	font-size: 2.5rem !important;
+}
+
+.logoBlock .sapUiBlockCellContent {
+	background-color: transparent !important;
+}
+
+.formLabel {
+	width: 200px;
+}
+
+.formValue {
+	width: 500px !important;
+	max-width: 100%;
+}
+
+.centered {
+	text-align: center;
+}
+
+.centeredVertically {
+	top: 30%;
+	position: relative;
+}
+
+.iframe-container iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.screenPage {
+	border: 1px solid #cccccc !important;
+	border-radius: 5px;
+}
+
+.vboxElementList .sapMFlexBox {
+	display: inline-block !important;
+}
+
+.onScreenText {
+	position: absolute;
+	top: -80px;
+	width: 100%;
+	background-color: #3f5161f0;
+	color: #eeeeee !important;
+	padding: 7px 7px 7px 20px;
+	border-top: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+}
+
+.autoScalingWidth {
+	max-width: 100% !important;
+}
+
+.autoScaling {
+	max-width: 100% !important;
+	height: auto;
+}
+
+.selectableTile:hover {
+	box-shadow: 0px 0px 3px 3px #cccccc;
+}
+
+.maxCoverWidth {
+	max-width: 350px;
+}
+
+.screenFrame {
+	border: 8px solid black !important;
+	box-sizing: border-box;
+	border-radius: 10px;
+	padding: 0px;
+	width: 350px;
+	height: 197px;
+}
+
+.pageOwnersDescription {
+	color: #aaaaaa !important;
+}
+
+.fullPageText {
+	width: 70%;
+	text-align: center;
+	font-size: 6vmin !important;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.fullPageText h1 {
+	font-size: 8vmin;
+}
+
+.fullPageText h2 {
+	font-size: 6vmin;
+}
+
+.centered {
+	width: 100%;
+	text-align: center;
+}
+
+iframe {
+	border: none;
+	position: absolute;
+	background-color: #ffffff;
+	left: 0;
+	top: 0;
+}
+
+iframe.hidden {
+	display: none;
+	transform: translateX(+100%);
+	z-index: -100;
+}
+
+iframe.hiding {
+	transform: translateX(-100%);
+	z-index: -50;
+	transition: transform 2s;
+}
+
+iframe.current {
+	transform: translateX(0%);
+	z-index: 10;
+	transition: transform 2s;
+}
+
+iframe.next {
+	transform: translateX(+100%);
+	z-index: -10;
+}
+
+iframe.notransition {
+	transition: transform 0s !important;
+}
+
+.sapMCrsl {
+	background-color: transparent !important;
+}
+
+/*
+ * Adjustments for mobile
+ */
+.sapUiBlockCellContent {
+	border-radius: 4px !important;
+	box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.1) !important;
+	margin: 0.5rem !important;
+}
+
+.sapUiBlockLayoutSizeXL .sapUiBlockCellContent>.sapMIBar,
+	.sapUiBlockLayoutSizeL .sapUiBlockCellContent>.sapMIBar {
+	margin: -30px -50px 30px -50px;
+	border-bottom: 1px solid #eeeeee;
+	padding: 30px 30px 30px 30px;
+}
+
+.sapUiBlockLayoutSizeM .sapUiBlockCellContent>.sapMIBar {
+	margin: -10px -50px 20px -50px;
+	border-bottom: 1px solid #eeeeee;
+	padding: 30px 30px 30px 30px;
+}
+
+.sapUiBlockLayoutSizeS .sapUiBlockCellContent>.sapMIBar {
+	margin: -10px -30px 20px -30px;
+	border-bottom: 1px solid #eeeeee;
+	padding: 30px 30px 30px 30px;
+}
+
+.sapUiBlockCellContent>.sapMIBar>.sapMTitle {
+	font-size: 1.2rem;
+}
